@@ -1,0 +1,30 @@
+.art {
+    width: 100%;
+    height: 30rem;
+    background-color: #EDEBE9;
+    margin-top: 3rem;
+  }
+  
+  .learn {
+    padding-top: 1rem;
+    padding-left: 4rem;
+  }
+  
+  .coffimg {
+    width: 90%;
+    height: 80%;
+    padding-left: 4rem;
+    object-fit: cover;
+  }
+  
+  .imgtex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .discover {
+    padding-right: 1.5rem;
+    color: green;
+  }
+  

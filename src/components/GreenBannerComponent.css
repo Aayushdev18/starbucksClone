@@ -1,0 +1,33 @@
+.green-banner {
+    background-color: #1E3932; 
+    color: white;
+    padding: 24px;
+  }
+  
+  .banner-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
+  
+  .green-banner h5 {
+    font-size: 1rem;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .know-more-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .know-more-btn:hover {
+    background-color: white;
+    color: #1E3932;
+  }
+  

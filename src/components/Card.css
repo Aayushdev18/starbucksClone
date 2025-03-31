@@ -1,0 +1,60 @@
+.hero-card {
+  height: 15rem;
+  width: 90%;
+  background-color: skyblue;
+  margin-left: 4rem;
+  margin-top: 4rem;
+  display: flex;
+  border-radius: 6px;
+  align-items: center;
+}
+
+.hero-img-container {
+  padding-left: 1rem;
+}
+
+.hero-img {
+  width: 7rem;
+}
+
+.hero-text {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.hero-subtitle {
+  padding: 0.3rem;
+}
+
+.hero-title {
+  padding: 0.3rem;
+  font-weight: bold;
+}
+
+.hero-description {
+  padding: 0.3rem;
+}
+
+.hero-button-container {
+  width: 30rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-button {
+  padding: 1rem 2rem;
+  height: 2rem;
+  margin-top: 10rem;
+  margin-right: 2rem;
+  border-radius: 1rem;
+  background-color: #01754A;
+  border: 1px solid #01754A;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #01613E;
+}

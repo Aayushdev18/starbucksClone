@@ -1,0 +1,43 @@
+.recommend-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.title {
+    color: #1e3932;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.recommend-items {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommend-card {
+    text-align: center;
+    margin-top: 20px;
+    width: 7rem;
+}
+
+
+.recommend-image {
+    width: 8rem; 
+    height: 8rem; 
+    object-fit: cover; 
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+
+.recommend-image:hover {
+    border: 2px solid #00754a;
+}
+
+.recommend-text {
+    color: #212529;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
