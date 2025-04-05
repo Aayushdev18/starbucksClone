@@ -1,89 +1,112 @@
-*{
-    font-size: small;
-}
 .divbody {
-    margin-top: 5rem;
-    width: 100%;
-    height: 55rem;
-    background-color: #0F382C;
-    display: flex;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .img {
-    width: 6rem;
-  }
-  
+  background-color: #f8f8f8;
+  padding: 0;
+}
+
+
+.divmain {
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.footercontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+}
+
+.footersection {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px 0;
+}
+
+.hthree {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.ullihe {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lihe {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+  color: #333;
+}
+
+.appdownload {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.appdiv {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  width: 180px;
+  margin: 5px;
+}
+
+.app {
+  margin-right: 10px;
+}
+
+.appicon {
+  font-size: 24px;
+  color: black;
+}
+
+.downtext {
+  font-size: 10px;
+  color: gray;
+  margin: 0;
+}
+
+.apptype {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  color: black;
+}
+
+@media (max-width: 768px) {
   .footercontainer {
-    display: flex;
-    padding-left: 5rem;
-    color: white;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .divmain {
-    display: flex;
-    margin-top: 10rem;
-    margin-left: 6rem;
-  }
-  
-  .lihe {
-    list-style: none;
-    padding-bottom: 4rem;
-    font-size: 1.3rem;
-  }
-  
-  .ullihe {
-    padding: 0;
-  }
-  
+
   .footersection {
-    padding-right: 5rem;
+    width: 100%;
+    text-align: center;
   }
-  
-  .hthree {
-    margin: 0;
-    font-size: 1.8rem;
-    font-weight: bold;
-  }
-  
-  .icon {
-    font-size: 3rem;
-    padding-right: 2rem;
-    padding-top: 1.5rem;
-  }
-  
+
   .appdownload {
-    width: 15rem;
-    height: 5rem;
-    background-color: white;
-    border-radius: 0.8rem;
-    margin-bottom: 1.5rem;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .app {
-    font-size: 4rem;
-    padding-left: 1.5rem;
-    padding-top: 0.5rem;
-  }
-  
-  .appdiv {
-    display: flex;
-  }
-  
-  .apptext {
-    color: black;
-    padding-top: 1.5rem;
-    padding-left: 1.5rem;
-  }
-  
-  .downtext {
-    font-size: 1rem;
-    margin: 0;
-  }
-  
-  .apptype {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin: 0;
-  }
-  
+}

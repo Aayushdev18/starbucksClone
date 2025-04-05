@@ -1,60 +1,151 @@
-.hero-card {
-  height: 15rem;
+.herocard-wrapper {
+  position: relative;
   width: 90%;
-  background-color: skyblue;
-  margin-left: 4rem;
-  margin-top: 4rem;
+  margin: 3rem auto;
+}
+
+.herocard,
+.hero2card {
+  width: 100%;
   display: flex;
-  border-radius: 6px;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  flex-wrap: wrap;
   align-items: center;
+  position: relative;
 }
 
-.hero-img-container {
-  padding-left: 1rem;
+.herocard {
+  background-color: lightgreen;
 }
 
-.hero-img {
-  width: 7rem;
+.hero2card {
+  background-color: #06907e;
 }
 
-.hero-text {
-  margin-top: 2rem;
-  margin-left: 2rem;
+.heroimg {
+  width: 8.2rem;
+  height: auto;
 }
 
-.hero-subtitle {
-  padding: 0.3rem;
+.herotext,
+.hero2text {
+  flex: 1 1 300px;
+  margin: 1rem 2rem;
+  font-size: 1.1rem;
 }
 
-.hero-title {
-  padding: 0.3rem;
-  font-weight: bold;
+.hero2text {
+  color: white;
 }
 
-.hero-description {
-  padding: 0.3rem;
-}
-
-.hero-button-container {
-  width: 30rem;
+.orderbutton,
+.knowmorebutton {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
+  margin-top: 1rem;
 }
 
-.hero-button {
-  padding: 1rem 2rem;
-  height: 2rem;
-  margin-top: 10rem;
-  margin-right: 2rem;
-  border-radius: 1rem;
-  background-color: #01754A;
-  border: 1px solid #01754A;
-  color: white;
+.order-now-btn,
+.know-more-btn {
+  width: 12rem;
+  height: 3.5rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
   cursor: pointer;
-  font-weight: bold;
-  transition: 0.3s;
 }
 
-.hero-button:hover {
-  background-color: #01613E;
+.order-now-btn {
+  background-color: green;
+  color: white;
+}
+
+.order-now-btn:hover {
+  background-color: darkgreen;
+}
+
+.know-more-btn {
+  background-color: white;
+  color: black;
+}
+
+.know-more-btn:hover {
+  background-color: #ddd;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+ 
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.prev {
+  left: 1rem;
+}
+
+.next {
+  right: -1rem;
+}
+
+
+@media (max-width: 768px) {
+  .herocard,
+  .hero2card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroimg {
+    width: 6rem;
+    margin: 1rem auto;
+  }
+
+  .orderbutton,
+  .knowmorebutton {
+    justify-content: center;
+  }
+
+  .herotext,
+  .hero2text {
+    margin: 0.5rem;
+  }
+
+  .prev,
+  .next {
+    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
 }

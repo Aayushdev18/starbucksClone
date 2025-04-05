@@ -1,61 +1,61 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: left;
-    padding: 15px 40px;
-    background-color: white;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    flex-wrap: wrap; 
 }
 
 .navbar-left {
     display: flex;
-    align-items: left;
+    align-items: center;
+    flex: 1; 
+    min-width: 200px;
 }
 
 .logo {
-    width: 40px;
     height: 40px;
-    cursor: pointer;
     margin-right: 20px;
 }
 
 .nav-links {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap; 
 }
 
 .nav-item {
-    font-size: 16px;
-    color: #212529;
     cursor: pointer;
-}
-
-.nav-item.active {
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-color: #00754a;
+    font-weight: 500;
+    white-space: nowrap;
 }
 
 .navbar-right {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
+    flex: 1; 
+    justify-content: flex-end;
+    min-width: 200px;
 }
 
 .search-box {
     display: flex;
     align-items: center;
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
     border-radius: 20px;
-    padding: 5px 10px;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+    flex: 1; 
+    max-width: 300px; 
 }
 
 .search-box input {
     border: none;
     outline: none;
-    padding-left: 10px;
+    padding-left: 0.5rem;
     font-size: 14px;
-}
-
-.profile-icon {
-    cursor: pointer;
+    flex: 1;
+    min-width: 50px; 
 }
